@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: mautic-web
+    env: docker
+    plan: free
+    dockerComposeFilePath: ./docker-compose.yml
+    buildCommand: ""
+    startCommand: ""
