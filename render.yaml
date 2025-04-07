@@ -1,5 +1,9 @@
+infrastructure:
+  dockerComposeFilePath: ./examples/basic/docker-compose.yml
+
 services:
   - type: web
     name: mautic-web
     env: docker
     plan: free
+    dockerCommand: mautic_web
